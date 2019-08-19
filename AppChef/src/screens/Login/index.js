@@ -16,7 +16,6 @@ import CommonText from '../../components/CommonText';
 import InputLine from '../../components/InputLine';
 
 import images from '../../assets/images';
-import theme from '../../theme';
 
 const BackgroundImage = styled.ImageBackground.attrs(props => ({
   source: images.background,
@@ -47,7 +46,7 @@ const ButtonAdd = styled.TouchableOpacity`
   height: 50;
   width: 100%;
   border-radius: 25;
-  background: ${p => p.theme.colors.primary};
+  background: ${p => p.theme.colors.tertiary};
   align-self: center;
   align-items: center;
   justify-content: center;
