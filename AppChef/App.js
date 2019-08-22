@@ -19,12 +19,12 @@ import {ThemeProvider} from 'styled-components';
 
 import theme from './src/theme';
 
-import Login from './src/screens/Login';
+import Navigation from './src/navigation';
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Login />
+      <Navigation />
     </ThemeProvider>
   );
 };
