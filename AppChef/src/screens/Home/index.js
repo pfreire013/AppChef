@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components/native';
+import CommonText from '../../components/CommonText';
 
 const Container = styled.View`
   flex: 1;
@@ -7,8 +8,16 @@ const Container = styled.View`
 `;
 
 class Home extends Component {
+  static navigationOptions = {
+    header: null,
+  };
+
   render() {
-    return <Container />;
+    return (
+      <Container>
+        <CommonText>Home</CommonText>
+      </Container>
+    );
   }
 }
 

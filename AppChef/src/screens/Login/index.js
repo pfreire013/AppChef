@@ -16,6 +16,7 @@ import CommonText from '../../components/CommonText';
 import InputLine from '../../components/InputLine';
 
 import images from '../../assets/images';
+import ROUTENAMES from '../../navigation/routeName';
 
 const BackgroundImage = styled.ImageBackground.attrs(props => ({
   source: images.background,
@@ -61,11 +62,16 @@ const InputContainer = styled.View`
 `;
 
 class Login extends Component {
+  static navigationOptions = {
+    header: null,
+  };
+
   state = {
     email: '',
     senha: '',
   };
   render() {
+    const {navigation} = this.props;
     return (
       <BackgroundImage>
         <Container>
@@ -79,7 +85,7 @@ class Login extends Component {
             <InputLine value={this.state.senha} placeholder="Senha" />
           </InputContainer>
 
-          <ButtonLogin>
+          <ButtonLogin onPress={() => navigation.navigate(ROUTENAMES.HOME)}>
             <CommonText type="h5Normal" color="white" noPadding noWidth>
               Entrar
             </CommonText>
