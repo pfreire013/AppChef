@@ -11,7 +11,7 @@ export default {
     black: '#000000',
     lightGray: '#D6D9DD',
     mediumGray: '#8A8A8A',
-    hardGray: '',
+    hardGray: 'v',
     border: '',
     shadow: '#000000',
     transparent: 'rgba(0, 0, 0, 0)',

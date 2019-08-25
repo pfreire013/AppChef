@@ -8,6 +8,10 @@ const ROUTENAMES = {
   LOGGED_APP: 'LoggedApp',
 
   HOME: 'Home',
+  COOK: 'Cook',
+  PROFILE: 'Profile',
+  RECIPE: 'Recipe',
+  RESTAURANT: 'Restaurant',
 };
 
 export default ROUTENAMES;

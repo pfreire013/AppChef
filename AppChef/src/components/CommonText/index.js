@@ -21,6 +21,8 @@ const Text = styled.Text`
         return `color: ${p.theme.colors.primary}`;
       case 'secondary':
         return `color: ${p.theme.colors.secondary}`;
+      case 'tertiary':
+        return `color: ${p.theme.colors.tertiary}`;
       default:
         return `color: ${p.theme.colors.black}`;
     }
