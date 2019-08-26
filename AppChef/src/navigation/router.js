@@ -21,6 +21,7 @@ import Recipe from '../screens/Recipe';
 import Restaurant from '../screens/Restaurant';
 import images from '../assets/images';
 import CommonText from '../components/CommonText';
+import SignUp from '../screens/SignUp';
 
 const IconHome = styled.Image.attrs(props => ({
   source: images.tabBar.home,
@@ -70,6 +71,16 @@ const defaultNavigationOptions = {
 const NonLoggedAppRoutes = createStackNavigator(
   {
     [ROUTENAMES.LOGIN]: {screen: Login},
+    [ROUTENAMES.SIGNUP]: {
+      screen: SignUp,
+      navigationOptions: () => ({
+        header: null,
+        //mostrar o back
+      }),
+    },
+  },
+  {
+    initialRouteName: ROUTENAMES.SIGNUP,
   },
   defaultNavigationOptions,
 );
@@ -98,7 +109,6 @@ const LoggedAppRoutes = createBottomTabNavigator(
         tabBarIcon: ({tintColor}) => (
           <IconBg>
             <IconHome />
-
           </IconBg>
           //<Icon name="heart" color={tintColor} size={24} />
         ),
@@ -150,7 +160,7 @@ const createRoutes = () =>
       },
       {
         headerMode: 'none',
-        initialRouteName: ROUTENAMES.LOGGED_APP, //ROUTENAMES.NON_LOGGED_APP,
+        initialRouteName: ROUTENAMES.NON_LOGGED_APP, //ROUTENAMES.NON_LOGGED_APP,
       },
     ),
   );

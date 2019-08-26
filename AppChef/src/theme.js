@@ -21,7 +21,7 @@ export default {
   fontSize: {
     h1: 42,
     h2: 33,
-    h3: 20,
+    h3: 24,
     h4: 18,
     h5: 16,
     monster: 80,

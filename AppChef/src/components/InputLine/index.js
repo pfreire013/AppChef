@@ -13,7 +13,10 @@ const StyledMaskInput = styled(TextInputMask).attrs(props => ({
 `;
 
 const StyledInput = styled.TextInput.attrs(props => ({
-  placeholderTextColor: props.theme.colors.white,
+  placeholderTextColor:
+    props.textColor === 'white'
+      ? props.theme.colors.white
+      : props.theme.colors.black,
 }))`
   border-bottom-width: 1;
   border-bottom-color: ${p => p.theme.colors.primary};

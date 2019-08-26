@@ -3,6 +3,7 @@ const ROUTENAMES = {
   NON_LOGGED_APP: 'NonLoggedAppRouter',
 
   LOGIN: 'Login',
+  SIGNUP: 'SignUp',
 
   // Logged
   LOGGED_APP: 'LoggedApp',

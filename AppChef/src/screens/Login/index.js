@@ -95,7 +95,7 @@ class Login extends Component {
             Esqueci minha senha
           </CommonText>
 
-          <ButtonAdd>
+          <ButtonAdd onPress={() => navigation.navigate(ROUTENAMES.SIGNUP)}>
             <CommonText type="h4" color="white" noPadding noWidth>
               Quero me cadastrar
             </CommonText>
